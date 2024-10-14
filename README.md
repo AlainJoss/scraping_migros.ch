@@ -47,5 +47,3 @@ I use the following libraries and tools:
 ## 🚧 Progress
 
 The project is currently **in progress**. So far I've beein able to scrape the **Migros** website. The next step is to scrape **Coop**, and then start analyzing the data.
-
----

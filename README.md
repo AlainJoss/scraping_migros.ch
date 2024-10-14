@@ -7,7 +7,7 @@
 - [Overview](#-overview)
 - [Motivation](#-motivation)
 - [Data Collected](#-data-collected)
-- [Project Structure](#-project-structure)
+- [Scraping Process](#-scraping-process)
 - [Tools](#️-tools)
 - [Limitations](#️-limitations)
 - [Next Steps](#️-next-steps)

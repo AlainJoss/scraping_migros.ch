@@ -15,7 +15,7 @@
 
 ## 📖 Overview
 
-**Project SMO** is a web scraping project in which I collect detailed product information from the [Migros Online](https://www.migros.ch/en) website. 
+**Project SMO** is a web scraping project in which I collect product information from [Migros Online](https://www.migros.ch/en). 
 
 The data was collected on **2024-10-14**.
 

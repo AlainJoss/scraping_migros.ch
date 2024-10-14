@@ -1,4 +1,4 @@
-# 🛒 Project SMO: Scraping Migros Online
+# 🛒 Scraping Migros.ch
 
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
 
@@ -15,7 +15,7 @@
 
 ## 📖 Overview
 
-**Project SMO** is a web scraping project in which I collect product information from [Migros Online](https://www.migros.ch/en). 
+**Project SMO** is a web scraping project in which I collect product information from [Migros.ch](https://www.migros.ch/en). 
 
 The data was collected on **2024-10-14**.
 

@@ -1,39 +1,37 @@
 # 🛒 Project SMO: Scraping Migros Online
 
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
-![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## 📖 Table of Contents
 
 - [Overview](#-overview)
 - [Motivation](#-motivation)
-- [Features](#-features)
 - [Data Collected](#-data-collected)
 - [Project Structure](#-project-structure)
 - [Tools](#️-tools)
-- [Progress](#-progress)
+- [Limitations](#️-limitations)
+- [Next Steps](#️-next-steps)
 - [Disclaimer](#-disclaimer)
 
 ## 📖 Overview
 
-**Project SMO** is a web scraping project that aims to collect data from the Migros online store.
+**Project SMO** is a web scraping project in which I collect detailed product information from the [Migros Online](https://www.migros.ch/en) website. 
+
+The data was collected on **2024-10-14**.
 
 ## 🎯 Motivation
 
 The goals of this project are:
 - **Generate a clean dataset** for others to use in their own projects.
 - **Analyze** the food we buy and consume from both a price and nutritional perspective.
-- **Gather insights** to make informed dietary decisions.
-
-## 🌟 Features
-
-- Scrapes detailed product information including prices, nutritional values, and categories.
-- Cleans and organizes data into a structured format.
-- Provides insights into consumer products for data analysis projects.
 
 ## 📊 Data Collected
 
-For each product, the following information (75 attributes) is collected:
+The final dataset contains 9,602 rows with 75 attributes. 
+The number of unique products is 9,545. Duplicates are due to products appearing in multiple subcategories.
+
+Here are some of the attributes collected:
+
 - 🏷️ **Product Name**
 - 🔗 **URL**
 - 🗂️ **Category**
@@ -56,24 +54,24 @@ For each product, the following information (75 attributes) is collected:
   - 🧂 **Salt**
   - ...
 
-**Dataset Summary:**
+## 📜 Scraping Process
 
-- **Number of rows:** 9,602 (9,545 unique products)
-- **Number of attributes:** 75
-- **Anomalies:** The price per unit is not always correct due to incorrect information provided on the website.
+The dataset was assembled in three steps:
+1. **Product URLs:** The first step was to collect all the product URLs from the Migros Online website. This was done by scraping the category and subcategory pages. The corresponding dataset is called `product_categorization_and_urls.csv`.
+2. **Product Specifics:** The second step was to scrape the product-specific pages to collect detailed information about each product. The corresponding dataset is called `product_specifics.csv`.
+3. **Data Cleaning:** The final dataset was created by merging the two datasets and cleaning the data. The final dataset is called `final_dataset.csv`.
 
-## 📂 Project Structure
+#### 📂 Project Structure
 
 ```
 Project-SMO/
 ├── data/
-│   └── products.csv
+│   └── final_dataset.csv
+│   └── product_categorization_and_urls.csv
+│   └── product_specifics.csv
 ├── scripts/
-│   ├── scraper.py
-│   └── data_cleaning.py
-├── images/
-│   └── sample_product_page.png
-├── LICENSE
+│   ├── scraper.ipynb 
+│   └── EDA.ipynb
 ├── README.md
 └── requirements.txt
 ```
@@ -85,9 +83,19 @@ I use the following libraries and tools:
 - **Data Processing**: `pandas` and `numpy`
 - **Data Storage**: CSV 
 
-## 🚧 Progress
+## ⚠️ Limitations
 
-The project is currently **in progress**. So far I've beein able to scrape the data and clean it. The next steps are to analyze the data and gather insights.
+- **Price per Unit Inaccuracy:** The price per unit may be incorrect due to inconsistencies on the Migros website.
+- **Duplicate Products:** Some products appear in multiple subcategories, resulting in duplicates.
+- **Nutritional Values:** Not all products have complete nutritional information.
+- **Data Cleaning:** The data cleaning process may not catch all errors.
+- **Website Changes:** The scraper will break if the website structure changes.
+- **Up-to-Date Information:** Sold products change and change price frequently, so will be outdated quickly.
+
+## 📈 Next Steps
+
+- **Data Analysis:** Analyze the dataset to gain insights into consumer products.
+- **Data Visualization:** Create visualizations to better understand the data.
 
 
 ## 📝 Disclaimer

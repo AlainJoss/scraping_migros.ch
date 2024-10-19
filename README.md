@@ -15,7 +15,7 @@
 
 ## 📖 Overview
 
-**Project SMO** is a web scraping project in which I collect product information from [Migros.ch](https://www.migros.ch/en). 
+The aim of this web scraping project is to collect useful information about all products offered on [Migros.ch](https://www.migros.ch/en). 
 
 The data was collected on **2024-10-14**.
 
@@ -27,8 +27,10 @@ The goals of this project are:
 
 ## 📊 Data Collected
 
-The final dataset contains 9,602 rows with 75 attributes. 
-The number of unique products is 9,545. Duplicates are due to products appearing in multiple subcategories.
+The final dataset contains 16,845 rows with 79 attributes. 
+Duplicates are due to products appearing in multiple subcategories.
+The focus is on the nutritional content of the products. 
+Other useful information that could have been collected includes "country of production", "rating", "climate impact", etc.
 
 Here are some of the attributes collected:
 
@@ -46,12 +48,11 @@ Here are some of the attributes collected:
   - 🔋 **Energy kJ**
   - 🔥 **Energy kcal**
   - 🧈 **Fat (g)**
-  - 🧊 **of which saturates (g)**
+  - 🧊 **Of which saturates (g)**
   - 🍞 **Carbohydrate (g)**
-  - 🍬 **of which sugars (g)**
+  - 🍬 **Of which sugars (g)**
   - 🌾 **Fibre (g)**
   - 💪 **Protein (g)**
-  - 🧂 **Salt**
   - ...
 
 ## 📜 Scraping Process
@@ -67,8 +68,8 @@ The dataset was assembled in three steps:
 Project-SMO/
 ├── data/
 │   └── final_dataset.csv
-│   └── product_categorization_and_urls.csv
-│   └── product_specifics.csv
+│   └── (hidden) product_categorization_and_urls.csv
+│   └── (hidden) product_specifics.csv
 ├── scripts/
 │   ├── scraper.ipynb 
 │   └── EDA.ipynb
@@ -85,12 +86,12 @@ I use the following libraries and tools:
 
 ## ⚠️ Limitations
 
-- **Price per Unit Inaccuracy:** The price per unit may be incorrect due to inconsistencies on the Migros website.
-- **Duplicate Products:** Some products appear in multiple subcategories, resulting in duplicates.
-- **Nutritional Values:** Not all products have complete nutritional information.
-- **Data Cleaning:** The data cleaning process may not catch all errors.
-- **Website Changes:** The scraper will break if the website structure changes.
-- **Up-to-Date Information:** Sold products change and change price frequently, so will be outdated quickly.
+- **Price per unit inaccuracy:** The price per unit may be incorrect due to inconsistencies on the Migros website.
+- **Duplicate products:** Some products appear in multiple subcategories, resulting in duplicates.
+- **Nutritional values:** Not all products have complete nutritional information.
+- **Data cleaning:** The data cleaning process may not catch all errors.
+- **Website changes:** The scraper will break if the website structure changes.
+- **Up-to-Date information:** Sold products change and change price frequently, so will be outdated quickly.
 
 ## 📈 Next Steps
 

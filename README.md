@@ -101,4 +101,5 @@ I use the following libraries and tools:
 
 ## 📝 Disclaimer
 
-This project is for educational purposes only. Please respect the website's terms of service and robots.txt file. The author is not responsible for any misuse of this code.
+This project is for educational purposes only. Please respect the website's terms of service. Be a maverick the right way.
+```

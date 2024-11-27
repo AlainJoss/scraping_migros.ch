@@ -102,4 +102,3 @@ I use the following libraries and tools:
 ## 📝 Disclaimer
 
 This project is for educational purposes only. Please respect the website's terms of service. Be a maverick the right way.
-```

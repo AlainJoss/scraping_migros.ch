@@ -1,0 +1,1 @@
+The provided dataset comprises a small chunk of the scraped data since Migros unfortunately denied permission to share the entire dataset.
